@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Support\HttpClient\Factory;
+namespace HttpClient\Factory;
 
-use App\Support\HttpClient\Message\Stream;
+use HttpClient\Message\Stream;
 use Psr\Http\Message\StreamFactoryInterface;
 use Psr\Http\Message\StreamInterface;
 

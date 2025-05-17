@@ -2,7 +2,7 @@
 
 namespace App\Support\HttpClient\Factory;
 
-use App\Support\HttpClient\Message\Response;
+use HttpClient\Message\Response;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 

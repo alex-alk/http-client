@@ -1,3 +1,9 @@
 {
-    "name": "alex-alk/http-client"
+    "name": "alex-alk/http-client",
+    "require": {
+        "psr/http-message": "^2.0",
+        "psr/http-factory": "^1.1",
+        "fig/http-message-util": "^1.1",
+        "psr/http-client": "^1.0"
+    }
 }

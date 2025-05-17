@@ -2,9 +2,9 @@
 
 namespace App\Support\HttpClient\Factory;
 
-use App\Support\HttpClient\Message\Request;
-use App\Support\HttpClient\Message\Uri;
 use Fig\Http\Message\RequestMethodInterface;
+use HttpClient\Message\Request;
+use HttpClient\Message\Uri;
 use Psr\Http\Message\RequestFactoryInterface;
 use Psr\Http\Message\RequestInterface;
 

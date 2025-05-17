@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Support\HttpClient\Client;
+namespace HttpClient\Client;
 
 use App\Support\HttpClient\Factory\RequestFactory;
 use App\Support\HttpClient\Factory\ResponseFactory;
-use App\Support\HttpClient\Factory\StreamFactory;
+use HttpClient\Factory\StreamFactory;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestFactoryInterface;
