@@ -2,6 +2,7 @@
 
 namespace HttpClient\Client;
 
+use HttpClient\Exception\RequestException;
 use HttpClient\Factory\RequestFactory;
 use HttpClient\Factory\ResponseFactory;
 use HttpClient\Factory\StreamFactory;
@@ -233,13 +234,15 @@ class HttpClient implements ClientInterface
 
         // execute
         $respBody = curl_exec($ch);
+        $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
         if ($respBody === false) {
             $err = curl_error($ch);
             curl_close($ch);
-            throw new class($err) extends \RuntimeException implements ClientExceptionInterface {};
+            throw new RequestException($err, $request, $status);
         }
 
-        $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        
         curl_close($ch);
 
         // build response via factory
