@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Support\HttpClient\Factory;
+namespace HttpClient\Factory;
 
 use HttpClient\Message\Response;
 use Psr\Http\Message\ResponseFactoryInterface;

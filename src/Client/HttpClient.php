@@ -2,8 +2,8 @@
 
 namespace HttpClient\Client;
 
-use App\Support\HttpClient\Factory\RequestFactory;
-use App\Support\HttpClient\Factory\ResponseFactory;
+use HttpClient\Factory\RequestFactory;
+use HttpClient\Factory\ResponseFactory;
 use HttpClient\Factory\StreamFactory;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;

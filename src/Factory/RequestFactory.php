@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Support\HttpClient\Factory;
+namespace HttpClient\Factory;
 
 use Fig\Http\Message\RequestMethodInterface;
 use HttpClient\Message\Request;
